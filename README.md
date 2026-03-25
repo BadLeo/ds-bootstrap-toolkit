@@ -17,19 +17,6 @@ A static frontend showcase and component cookbook that translates Dungeon Siege-
 - Shared interactive behavior in [`assets/js/toolkit.js`](./assets/js/toolkit.js)
 - Visual reference samples in [`docs/samples`](./docs/samples)
 
-## Quick Start
-
-Clone the repository and serve it from the project root with any static HTTP server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open:
-
-- `http://localhost:8000/index.html`
-- `http://localhost:8000/cookbook.html`
-
 ## Project Structure
 
 ```text
@@ -52,19 +39,6 @@ Then open:
 - Preserve strong art direction across typography, surfaces, and motion.
 - Keep the project easy to inspect, edit, and deploy as plain static files.
 - Respect accessibility basics and reduced-motion preferences.
-
-## Publishing To GitHub
-
-This repository includes a GitHub Pages workflow at [`.github/workflows/pages.yml`](./.github/workflows/pages.yml) for zero-build deployment.
-
-Recommended publishing flow:
-
-1. Create a new GitHub repository.
-2. Push this project to the default branch.
-3. In GitHub, enable Pages and set the source to `GitHub Actions`.
-4. The workflow will publish the static site on pushes to `main`.
-
-If your default branch is not `main`, update the branch trigger in the workflow file before publishing.
 
 ## Contribution And Support
 
