@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Siege Frontend Toolkit Cookbook</title>
+  <meta name="description"
+    content="Cookbook of steampunk Bootstrap components inspired by Dungeon Siege interface design.">
+  <meta name="theme-color" content="#19130f">
+  <meta property="og:title" content="Dungeon Siege Frontend Toolkit Cookbook">
+  <meta property="og:description" content="Cookbook of steampunk Bootstrap components inspired by Dungeon Siege interface design.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/mediaeval.png">
+  <meta property="og:image:alt" content="Dungeon Siege-inspired component cookbook preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dungeon Siege Frontend Toolkit Cookbook">
+  <meta name="twitter:description" content="Cookbook of steampunk Bootstrap components inspired by Dungeon Siege interface design.">
+  <meta name="twitter:image" content="./assets/images/mediaeval.png">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link href="./assets/css/toolkit.css" rel="stylesheet">
+</head>
+
+<body class="ds-shell">
+  <div class="page-wrap">
+    <nav class="navbar navbar-expand-lg ds-navbar sticky-top">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-3 text-light" href="./index.html">
+          <span class="brand-mark">DS</span>
+          <span class="brand-title">Toolkit Cookbook</span>
+        </a>
+        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <a class="nav-link text-light" href="./index.html">Showcase</a>
+          <a class="nav-link text-light" href="#components">Components</a>
+          <a class="nav-link text-light" href="https://github.com/BadLeo/ds-bootstrap-toolkit" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="mb-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-12">
+            <div class="ds-card" data-animate>
+              <span class="eyebrow">Component catalog</span>
+              <h1 class="display-5 mt-3">Cookbook for building steampunk Bootstrap screens.</h1>
+              <p class="lead mb-0">Each block below includes a live demo and a markup sample. The classes stay close to
+                Bootstrap conventions and add only the theme-specific layer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="components" class="mb-5">
+        <div class="section-title" data-animate>
+          <h2 class="h2 m-0">Core Components</h2>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="ds-card h-100" data-animate>
+              <h3 class="h4">Buttons and Badges</h3>
+              <div class="d-flex flex-wrap gap-3 mt-4 mb-4">
+                <button class="btn btn-ds" type="button">Primary Command</button>
+                <button class="btn btn-outline-ds" type="button">Secondary</button>
+                <span class="ds-badge">Elite Tier</span>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-buttons">&lt;button class="btn btn-ds"&gt;Primary Command&lt;/button&gt;
+&lt;button class="btn btn-outline-ds"&gt;Secondary&lt;/button&gt;
+&lt;span class="ds-badge"&gt;Elite Tier&lt;/span&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-buttons">Copy
+                Snippet</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ds-card steel h-100" data-animate>
+              <h3 class="h4">Forged Tabs</h3>
+              <ul class="nav nav-tabs ds-tabs mt-4 mb-4">
+                <li class="nav-item"><button class="nav-link active" type="button">Loadout</button></li>
+                <li class="nav-item"><button class="nav-link" type="button">Skills</button></li>
+                <li class="nav-item"><button class="nav-link" type="button">Codex</button></li>
+              </ul>
+              <div class="ds-code">
+                <pre id="code-tabs">&lt;ul class="nav nav-tabs ds-tabs"&gt;
+  &lt;li class="nav-item"&gt;&lt;button class="nav-link active"&gt;Loadout&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;button class="nav-link"&gt;Skills&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;button class="nav-link"&gt;Codex&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-tabs">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="ds-card parchment h-100" data-animate>
+              <h3 class="h4">Parchment Card</h3>
+              <p class="mb-4">Use this for journals, lore, mission text, or recipe instructions.</p>
+              <div class="p-3 rounded-4 border bg-light-subtle">
+                <small class="text-uppercase">Filed under</small>
+                <div class="h5 mb-2">Workshop Notes</div>
+                <p class="mb-0">Replace bright UI chrome with a reading surface that still feels part of the same
+                  machine-made world.</p>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-card">&lt;div class="ds-card parchment"&gt;
+  &lt;h3&gt;Parchment Card&lt;/h3&gt;
+  &lt;p&gt;Journal or lore content.&lt;/p&gt;
+&lt;/div&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-card">Copy Snippet</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ds-card h-100" data-animate>
+              <h3 class="h4">Meters and Stats</h3>
+              <div class="ds-stat mt-4">
+                <span>Steam Pressure</span>
+                <span>74%</span>
+              </div>
+              <div class="ds-meter mb-3"><span style="width: 74%"></span></div>
+              <div class="ds-stat">
+                <span>Arc Capacity</span>
+                <span>52%</span>
+              </div>
+              <div class="ds-meter"><span
+                  style="width: 52%; background: linear-gradient(90deg, #4c71a6, #74c3ff)"></span></div>
+              <div class="ds-code mt-3">
+                <pre id="code-meter">&lt;div class="ds-stat"&gt;
+  &lt;span&gt;Steam Pressure&lt;/span&gt;
+  &lt;span&gt;74%&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="ds-meter"&gt;&lt;span style="width: 74%"&gt;&lt;/span&gt;&lt;/div&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-meter">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12">
+            <div class="ds-card h-100" data-animate>
+              <h3 class="h4">Form Controls</h3>
+              <form class="row g-3 mt-1">
+                <div class="col-12">
+                  <label class="form-label">Machine ID</label>
+                  <input class="form-control ds-input" value="MK-IV Aether Forge">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Class</label>
+                  <select class="form-select ds-input">
+                    <option>Artificer</option>
+                    <option>Sentinel</option>
+                    <option>Archivist</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Status</label>
+                  <input class="form-control ds-input" value="Ready">
+                </div>
+              </form>
+              <div class="ds-code mt-3">
+                <pre id="code-form">&lt;input class="form-control ds-input" placeholder="Machine ID"&gt;
+&lt;select class="form-select ds-input"&gt;
+  &lt;option&gt;Artificer&lt;/option&gt;
+&lt;/select&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-form">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12">
+            <div class="ds-card steel" data-animate>
+              <h3 class="h4">Gear Toggle</h3>
+              <div class="d-flex flex-column gap-4 mt-4">
+                <label class="ds-gear-toggle">
+                  <input class="ds-gear-toggle-input" type="checkbox" checked>
+                  <span class="ds-gear-toggle-track">
+                    <span class="ds-gear-toggle-knob"><i class="fa-solid fa-gear"></i></span>
+                  </span>
+                  <span class="ds-gear-toggle-copy">
+                    <span class="ds-gear-toggle-title">Steam Relay</span>
+                    <span class="ds-gear-toggle-note">Shift the gear to arm the mechanism.</span>
+                  </span>
+                </label>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-toggle">&lt;label class="ds-gear-toggle"&gt;
+  &lt;input class="ds-gear-toggle-input" type="checkbox" checked&gt;
+  &lt;span class="ds-gear-toggle-track"&gt;
+    &lt;span class="ds-gear-toggle-knob"&gt;&lt;i class="fa-solid fa-gear"&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class="ds-gear-toggle-copy"&gt;
+    &lt;span class="ds-gear-toggle-title"&gt;Steam Relay&lt;/span&gt;
+    &lt;span class="ds-gear-toggle-note"&gt;Shift the gear to arm the mechanism.&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/label&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-toggle">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="ds-card steel h-100" data-animate>
+              <h3 class="h4">Data Table</h3>
+              <div class="ds-table-wrap mt-4">
+                <table class="table ds-table align-middle">
+                  <thead>
+                    <tr>
+                      <th>Module</th>
+                      <th>Discipline</th>
+                      <th>Status</th>
+                      <th class="text-end">Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="ds-cell-title">Aether Forge</div>
+                        <div class="ds-cell-note">Foundry wing / Mk-IV</div>
+                      </td>
+                      <td>Engineering</td>
+                      <td><span class="ds-badge">Stable</span></td>
+                      <td class="text-end">92%</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="ds-cell-title">Vault Relay</div>
+                        <div class="ds-cell-note">Archive conduit</div>
+                      </td>
+                      <td>Logistics</td>
+                      <td><span class="ds-badge">Queued</span></td>
+                      <td class="text-end">67%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-table">&lt;div class="ds-table-wrap"&gt;
+  &lt;table class="table ds-table align-middle"&gt;
+    &lt;thead&gt;...&lt;/thead&gt;
+    &lt;tbody&gt;...&lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-table">Copy Snippet</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="ds-card h-100" data-animate>
+              <h3 class="h4">Pagination</h3>
+              <nav class="mt-4" aria-label="Cookbook pagination">
+                <ul class="pagination ds-pagination mb-0">
+                  <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+              <div class="ds-code mt-3">
+                <pre id="code-pagination">&lt;ul class="pagination ds-pagination"&gt;
+  &lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-pagination">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12">
+            <div class="ds-card steel" data-animate>
+              <h3 class="h4">Progress Glass Ball</h3>
+              <div class="ds-orb-panel mt-4">
+                <div class="ds-orb-stack">
+                  <div class="ds-orb" data-value="0" data-demo-loop
+                    style="--orb-color:#1837b1;--orb-color-deep:#07104d;">
+                    <div class="ds-orb-viewport">
+                      <div class="ds-orb-liquid"></div>
+                    </div>
+                    <div class="ds-orb-surface"></div>
+                  </div>
+                  <div class="ds-orb-value">0%</div>
+                </div>
+                <div class="ds-orb-stack">
+                  <div class="ds-orb" data-value="46" style="--orb-color:#a218b1;--orb-color-deep:#4e0c56;">
+                    <div class="ds-orb-viewport">
+                      <div class="ds-orb-liquid"></div>
+                    </div>
+                    <div class="ds-orb-surface"></div>
+                  </div>
+                  <div class="ds-orb-value">46%</div>
+                </div>
+                <div class="ds-orb-stack">
+                  <div class="ds-orb" data-value="64" style="--orb-color:#1888b1;--orb-color-deep:#0d4a60;">
+                    <div class="ds-orb-viewport">
+                      <div class="ds-orb-liquid"></div>
+                    </div>
+                    <div class="ds-orb-surface"></div>
+                  </div>
+                  <div class="ds-orb-value">64%</div>
+                </div>
+                <div class="ds-orb-stack">
+                  <div class="ds-orb" data-value="100" style="--orb-color:#981915;--orb-color-deep:#4a0707;">
+                    <div class="ds-orb-viewport">
+                      <div class="ds-orb-liquid"></div>
+                    </div>
+                    <div class="ds-orb-surface"></div>
+                  </div>
+                  <div class="ds-orb-value">100%</div>
+                </div>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-orb">&lt;div class="ds-orb-stack"&gt;
+  &lt;div class="ds-orb" data-value="76" style="--orb-color:#1837b1;--orb-color-deep:#07104d;"&gt;
+    &lt;div class="ds-orb-viewport"&gt;
+      &lt;div class="ds-orb-liquid"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ds-orb-surface"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="ds-orb-value"&gt;76%&lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-orb">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12">
+            <div class="ds-card steel" data-animate>
+              <h3 class="h4">Timeline</h3>
+              <ol class="ds-timeline mt-4">
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">06:10 / Normal</span>
+                  <div class="ds-timeline-card">
+                    <div class="ds-timeline-title">Hull Integrity</div>
+                    <p class="ds-timeline-copy">The hull is intact and ready for deployment.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">06:40 / bg-primary</span>
+                  <div class="ds-timeline-card bg-primary">
+                    <div class="ds-timeline-title">Steam Core Primed</div>
+                    <p class="ds-timeline-copy">Pressure climbs through the lower vaults as the foundry wakes.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">07:05 / bg-secondary</span>
+                  <div class="ds-timeline-card bg-secondary">
+                    <div class="ds-timeline-title">Machine Casing Sealed</div>
+                    <p class="ds-timeline-copy">Outer plates were riveted shut before the relay chamber was reopened.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">07:45 / bg-success</span>
+                  <div class="ds-timeline-card bg-success">
+                    <div class="ds-timeline-title">Archive Link Stabilized</div>
+                    <p class="ds-timeline-copy">Signal passes the brass gate and reaches the second register chamber.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">08:20 / bg-warning</span>
+                  <div class="ds-timeline-card bg-warning">
+                    <div class="ds-timeline-title">Boiler Threshold Reached</div>
+                    <p class="ds-timeline-copy">Operators throttled the pressure band before the gauge passed the amber line.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">09:00 / bg-danger</span>
+                  <div class="ds-timeline-card bg-danger">
+                    <div class="ds-timeline-title">North Trench Pressure Drop</div>
+                    <p class="ds-timeline-copy">Maintenance crews were dispatched before the valve train locked down.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">09:35 / bg-info</span>
+                  <div class="ds-timeline-card bg-info">
+                    <div class="ds-timeline-title">Cooling Lens Calibrated</div>
+                    <p class="ds-timeline-copy">A clear line of telemetry was restored across the condenser array.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">10:15 / bg-light text-dark</span>
+                  <div class="ds-timeline-card bg-light text-dark">
+                    <div class="ds-timeline-title">Final Entry Archived</div>
+                    <p class="ds-timeline-copy">The day’s record was stamped and filed into the upper brass cabinet.</p>
+                  </div>
+                </li>
+                <li class="ds-timeline-item">
+                  <span class="ds-timeline-time">10:50 / bg-dark</span>
+                  <div class="ds-timeline-card bg-dark">
+                    <div class="ds-timeline-title">Core Chamber Dormant</div>
+                    <p class="ds-timeline-copy">Residual heat fell below threshold and the trench lights dimmed to idle.</p>
+                  </div>
+                </li>
+              </ol>
+              <div class="ds-code mt-3">
+                <pre id="code-timeline">&lt;ol class="ds-timeline"&gt;
+  &lt;li class="ds-timeline-item"&gt;
+    &lt;span class="ds-timeline-time"&gt;06:10 / Ignition&lt;/span&gt;
+    &lt;div class="ds-timeline-card bg-primary"&gt;
+      &lt;div class="ds-timeline-title"&gt;Steam Core Primed&lt;/div&gt;
+      &lt;p class="ds-timeline-copy"&gt;Pressure climbs through the lower vaults.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="ds-timeline-item"&gt;
+    &lt;span class="ds-timeline-time"&gt;10:40 / Sensor&lt;/span&gt;
+    &lt;div class="ds-timeline-card bg-info"&gt;...&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-timeline">Copy Snippet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12">
+            <div class="ds-card steel" data-animate>
+              <h3 class="h4">Accordion</h3>
+              <div class="accordion ds-accordion mt-4" id="cookbookAccordion">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#cookbookPanelOne" aria-expanded="true" aria-controls="cookbookPanelOne">
+                      <span class="accordion-gear accordion-gear-start"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-title">Foundry Logs</span>
+                      <span class="accordion-copy">Visible by default</span>
+                      <span class="accordion-gear accordion-gear-end"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-chain"><i class="fa-solid fa-link"></i><i
+                          class="fa-solid fa-link"></i></span>
+                    </button>
+                  </h4>
+                  <div id="cookbookPanelOne" class="accordion-collapse collapse show"
+                    data-bs-parent="#cookbookAccordion">
+                    <div class="accordion-body">
+                      Front and trailing gears flank the title, and they counter-rotate whenever a section opens or
+                      closes.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#cookbookPanelTwo" aria-expanded="false" aria-controls="cookbookPanelTwo">
+                      <span class="accordion-gear accordion-gear-start"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-title">Auxiliary Pistons</span>
+                      <span class="accordion-copy">Open to trigger icon motion</span>
+                      <span class="accordion-gear accordion-gear-end"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-chain"><i class="fa-solid fa-link"></i><i
+                          class="fa-solid fa-link"></i></span>
+                    </button>
+                  </h4>
+                  <div id="cookbookPanelTwo" class="accordion-collapse collapse" data-bs-parent="#cookbookAccordion">
+                    <div class="accordion-body">
+                      This pattern works well for FAQs, settings panes, mission lists, or any menu stack that needs more
+                      cinematic chrome.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#cookbookPanelThree" aria-expanded="false" aria-controls="cookbookPanelThree">
+                      <span class="accordion-gear accordion-gear-start"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-title">Accordion Item</span>
+                      <span class="accordion-copy">Open to trigger icon motion</span>
+                      <span class="accordion-gear accordion-gear-end"><i class="fa-solid fa-gear"></i></span>
+                      <span class="accordion-chain"><i class="fa-solid fa-link"></i><i
+                          class="fa-solid fa-link"></i></span>
+                    </button>
+                  </h4>
+                  <div id="cookbookPanelThree" class="accordion-collapse collapse" data-bs-parent="#cookbookAccordion">
+                    <div class="accordion-body">
+                      This is the third item’s accordion body. It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element. These classes control the overall
+                      appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                      custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                      can go within the <code>accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ds-code mt-3">
+                <pre id="code-accordion">&lt;div class="accordion ds-accordion" id="forgeAccordion"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h4 class="accordion-header"&gt;
+      &lt;button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#panelOne"&gt;
+        &lt;span class="accordion-gear accordion-gear-start"&gt;&lt;i class="fa-solid fa-gear"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="accordion-title"&gt;Foundry Logs&lt;/span&gt;
+        &lt;span class="accordion-copy"&gt;Visible by default&lt;/span&gt;
+        &lt;span class="accordion-gear accordion-gear-end"&gt;&lt;i class="fa-solid fa-gear"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="accordion-chain"&gt;&lt;i class="fa-solid fa-link"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-link"&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/h4&gt;
+    &lt;div id="panelOne" class="accordion-collapse collapse show"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-accordion">Copy
+                Snippet</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="snippets" class="pb-5">
+        <div class="section-title" data-animate>
+          <h2 class="h2 m-0">Assembly Notes</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="ds-card" data-animate>
+              <h3 class="h4">Required Includes</h3>
+              <div class="ds-code mt-3">
+                <pre id="code-imports">&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet"&gt;
+&lt;link href="./assets/css/toolkit.css" rel="stylesheet"&gt;
+
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"&gt;&lt;/script&gt;
+&lt;script src="./assets/js/toolkit.js"&gt;&lt;/script&gt;</pre>
+              </div>
+              <button class="btn btn-outline-ds mt-3" type="button" data-copy-target="code-imports">Copy
+                Snippet</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ds-card parchment" data-animate>
+              <h3 class="h4">Usage Guidance</h3>
+              <ul class="mb-0">
+                <li>Start from standard Bootstrap layout markup and add the `ds-*` classes selectively.</li>
+                <li>Use parchment cards for reading surfaces and dark steel cards for controls or chrome-heavy modules.
+                </li>
+                <li>Apply `data-animate` to any block that should rise in during page load.</li>
+                <li>Use the themed accordion when you want mechanical motion without adding decorative free-floating
+                  gear blocks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container pb-4">
+      <div class="footer-note ds-footer text-center">
+        <span>Copyright
+          <script>document.write(new Date().getFullYear())</script>
+        </span>
+        <a href="https://badleo.com/" target="_blank" rel="noreferrer">
+          <img class="rr4-footer-mark" src="https://badleo.com/badleo-bw.svg" alt="BadLeo.com">
+        </a>
+        <a href="https://badleo.com/" target="_blank" rel="noreferrer">BadLeo.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/toolkit.js"></script>
+</body>
+
+</html>
