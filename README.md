@@ -2,6 +2,9 @@
 
 A static frontend showcase and component cookbook that translates Dungeon Siege-inspired interface references into a reusable HTML, CSS, and JavaScript design system.
 
+## DEMO
+[View the demo](https://badleo.github.io/ds-bootstrap-toolkit/)
+
 ## Overview
 
 - Static-first: no build step, package manager, or framework required.
