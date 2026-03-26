@@ -1149,6 +1149,26 @@ a:hover {
 }
 
 @media (max-width: 991.98px) {
+  .ds-navbar .container {
+    row-gap: 0.75rem;
+  }
+
+  .ds-navbar .navbar-brand {
+    margin-right: 0;
+  }
+
+  .ds-navbar .navbar-nav {
+    width: 100%;
+    align-items: flex-start !important;
+    gap: 0.65rem;
+    margin-left: 0 !important;
+    padding-top: 0.2rem;
+  }
+
+  .ds-navbar .nav-link {
+    padding: 0;
+  }
+
   .hero-panel {
     padding: 3rem 0;
   }
@@ -1159,6 +1179,16 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+  .ds-navbar .brand-title,
+  .ds-navbar .navbar-brand {
+    font-size: 0.95rem;
+  }
+
+  .ds-navbar .brand-mark {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
   .hero-panel .hero-copy {
     padding: 1rem;
   }
